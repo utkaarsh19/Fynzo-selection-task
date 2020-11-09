@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>WEBSITE</title>
+	<link rel="stylesheet" type="text/css" href="index.css">
+	<link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css">
+	<style style="text/css">
+div.slide-left {
+  width:100%;
+  overflow:hidden;
+}
+div.slide-left p {
+  animation: slide-left 2s;
+}
+
+@keyframes slide-left {
+  from {
+    margin-left: 100%;
+    width: 300%; 
+  }
+
+  to {
+    margin-left: 0%;
+    width: 100%;
+  }
+}
+</style>
+</head>
+<body>	
+		<script src="index.js"></script>
+	<div class="parallax"></div>
+			
+                
+			<div id="start">
+				<img src="fyn1.png" alt="fynzo">
+				<div class="slide-left">
+				<p>ENQUIRY FORM</p><br>
+				<a href="#sec2"><button>START</button></a>
+			</div>
+		</div>
+			
+		
+
+
+		<section id="sec2">
+			<a href="#sec3"></a>
+			<div id="name">
+				<p>NAME</p>
+				<i class="fa fa-user fa-lg  fa-fw"aria-hidden="true"></i>
+				<input type="text" id="txt" placeholder="Enter your Name" onkeypress="valForm(this)">
+				<br><br>
+				<a href="#sec3"><button id="btNext" disabled>NEXT</button></a><br>
+				</div>
+			
+
+		</section>
+
+		
+		<div id="sec3">
+			<div id = "abc">
+			<div id="Dob"><br><br><br><br><br>
+				<img src="dob1.jpg" alt="birthday">
+				
+				<p>DATE OF BIRTH</p>
+				
+				
+				<form name="form1" action="#sec4"> 
+				<ul>
+				<label>Enter you Date of Birth</label>
+				<i class="fa fa-calendar" aria-hidden="true"></i>
+				<input type='text' name='text1'/>
+				<label>Eg: 19/12/2000</label>
+				<li class="submit"><a href="#sec4"><input type="submit" name="submit" value="NEXT" onclick="validatedate(document.form1.text1)"/></a></li>
+				
+				</ul>
+				</form>
+			</div>
+			</div>
+		</div>
+		
+		
+
+		<section id="sec4">
+			<div id="ach"><br>
+
+				<img src="ach.jpg">
+				<p>ACHIEVEMENTS</p>
+				<i class="fa fa-user-circle fa-lg" aria-hidden="true"></i>
+				<textarea rows="4" id="txt1" cols="25" onclick="valForm1(this)"></textarea><br>
+				<a href="#sec5"><button type="submit" id="btNext1" disabled>NEXT</button></a>
+			
+		</div>
+		</section>
+
+
+		<div id="sec5">
+			<div id="fam">
+				
+				
+				<p>FAMILY MEMBERS</p>
+				
+				<input type="checkbox" id="mem1"  onclick="check(this)">  NO ONE<br>
+				<input type="checkbox" id="mem2"  onclick="check(this)">  FATHER<br>
+				<input type="checkbox" id="mem3"  onclick="check(this)">  MOTHER<br>
+				<input type="checkbox" id="mem4"  onclick="check(this)">  BROTHER<br>
+				<input type="checkbox" id="mem5"  onclick="check(this)">  SISTER<br>
+				<input type="checkbox" id="mem6"  onclick="check(this)">  OTHER<br><br>
+			
+				<a href="#sec6"><button type="submit" id="btNext2" disabled>NEXT</button></a><br><br><br>
+			
+		</div>
+		</div>
+
+
+		<section id="sec6"><br><br><br>		
+			<div id="subm">
+				
+				<p>SUBMIT HERE</p><br><a href="#start"><input type="submit" name="submit"></a>
+				<p>CONGRATULATIONS ! You have reached the End of the Form</p>
+				<p>CLICK ON SUBMIT TO SUBMIT AND MOVE TO THE TOP</p>
+				<img src="fyn1.png" alt="fynzo">
+			</div>
+		</section>
+			
+</body>
+</html>
